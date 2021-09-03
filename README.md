@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# randevuSistemi---MHRS-UI
+REACT.JS-FRONTEND
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PROJE HAKKINDA
+MHRS Randevu Sistemi ana sayfa olarak randevu al sayfası karşımıza gelir yönetilebilmesi kolay olması açısından management tarafıda aynı menüde gözükmektedir.
+Management tarafında HASTANE,DOKTOR,ONLİNEDOKTOR,VE RANDEVULAR Sekmeleri bulunmaktadır.İlgili sayfalarda CRUD işlemleri yapılmıştır.Projede şuanlık login bulunmamaktadır ancak halen geliştirilme aşamasında olduğundan üzerine koyularak devam edilecektir.Projemde PrimeReact kullandım ve onun eklentilerini.Bootstrap kullandım çeşitlilik çok olsun diye.
+Ve daha birsürü eklenti burda var burayı fazla uzun tutmak istemem resimler üzerinden projemi anlatmak istiyorum.
 
-## Available Scripts
+# ANASAYFA
+## Randevu Al 
+![image](https://user-images.githubusercontent.com/65370170/132061855-c136ec2d-8b5d-43ea-bc2e-4cdf8527118a.png)
 
-In the project directory, you can run:
+Burada il ilçe mahalle departman ve doktor kullanıcıdan isteniyor burada tüm filtrelemeler yapılmıştır ile göre ilçeler ilçeye göre mahalleler vs..
+randevutarihi kısmında tarih seçildiği anda karşımıza şöyle bir ekran gelir;
 
-### `npm start`
+![image](https://user-images.githubusercontent.com/65370170/132062392-41605789-d20e-4194-b371-04e9cdd78668.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Randevu Alın Butonuna tıklandıktan sonra ise ;
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/65370170/132062514-faa4a1d4-a8f3-475c-9d86-3209d6ee1b2a.png)
 
-### `npm test`
+İsim TC TEL VE MAİL ALANI GELİR BU alanda isim tc ve telefon zorunlu alan olup burada VALİDATİON işlemleri yapılmıştır.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/65370170/132062705-d167488e-4cc8-462b-8294-1de84527def0.png)
 
-### `npm run build`
+Bilgiler girildikten sonra ise randevu başarılı bir şekilde kaydedilir ve bir pencere açılır;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/65370170/132062839-7dcc1daa-76da-4ce6-9a0c-37a8fc4d4df7.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Burada veriler veritabanına kaydedilir ve alınan randevular bir daha listelenmez!!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# MANAGEMENT(YÖNETİM)
+## HOSPİTAL(HASTANE)
 
-### `npm run eject`
+Burası CRUD İşlemlerinin gerçekleştiği sayfadır.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![image](https://user-images.githubusercontent.com/65370170/132063168-c1338f73-b263-4273-8a53-304cb4797593.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Yeni bir hastane eklemek istediğimizde new butonu ile karşımıza;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](https://user-images.githubusercontent.com/65370170/132063232-eac9384d-4c2d-462c-bd42-89c45046ab75.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+bu ekran gelir ve eklemek istediğimiz hastanenin adres bilgisini ve ismini yazmamız yeterli.
 
-## Learn More
+Update  ve delete işlemleri de aynı şekilde çalışmaktadır.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## DOCTOR
 
-### Code Splitting
+Burada da aynı şekilde CRUD İşlemleri yapılır.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://user-images.githubusercontent.com/65370170/132063441-00b3e8cb-c50c-41be-b2c4-a650902c05d4.png)
 
-### Analyzing the Bundle Size
+Yeni bir doktor eklediğimiz zaman ise NEW butonu ile yine karşımıza ;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image](https://user-images.githubusercontent.com/65370170/132063550-223de82b-6ba3-4460-8b97-8f66546200ba.png)
 
-### Making a Progressive Web App
+bu ekran gelir ve doktor ekleme işleminide başarılı bir şekilde yaparız.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ONLİNEDOCTOR(BOŞ RANDEVU SAATLERİ AYARLAMA EKRANI)
 
-### Advanced Configuration
+Burada da aynı şekilde CRUD İşlemleri yapılır.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![image](https://user-images.githubusercontent.com/65370170/132063691-a556a800-8299-408d-a611-7215b9b2ceda.png)
 
-### Deployment
+Yeni bir saat eklediğimiz zaman ise NEW butonu ile yine karşımıza ;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![image](https://user-images.githubusercontent.com/65370170/132063782-ce75c12d-82c1-4d9f-8cac-c1f52965c56e.png)
 
-### `npm run build` fails to minify
+bu ekran gelir ve saat ekleme işleminide başarılı bir şekilde yaparız.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## APPOİNTMENTS(ALINAN RANDEVULAR)
+
+Burada sadece listeleme İşlemleri yapılır.İstenirse Diğer işlemlerde eklenebilir tabi.
+
+![image](https://user-images.githubusercontent.com/65370170/132064036-d83971ca-7057-4534-8b2e-ae28d82070d2.png)
+
+
+# EXPORT İŞLEMİ İLE VERİLERİ DIŞA AKTARABİLİYORUZ.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
